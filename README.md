@@ -19,7 +19,6 @@
   922  git config --global user.email "vishnupg0609@gmail.com"
   923  git commit -m "Hello"
   924  git status
-  925  git baranch -M main
   926  git branch -M main
   927  git status
   928  git remote add origin https://github.com/thevishnupg/main.git
