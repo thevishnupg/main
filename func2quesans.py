@@ -84,7 +84,7 @@
 
 
 # def account(name, acc, bal):
-#     a =name
+#     a = name
 #     b = acc
 #     c = bal
 #     balance=bal

@@ -9,31 +9,36 @@ based on the following rules:
 * Paper beats rock
 If both the user and the computer choose the same option, the dame is a tie."""
 
-x = input('Enter your choice ( Rock, Scissors, Paper)')
+x = input('Enter your choice ( Rock, Scissors, Paper):')
+
+print()
 
 y = ['rock','paper','scissors'] 
 
-print(random.choice(y))
+computer = (random.choice(y))
+print('computers choice:',computer)
 
-if x[::]==y[::] :
+print()
+
+
+
+if x==computer:
     print("Tie match")
 elif x=='Scissors' or 'scissors' or 'SCISSORS':
-    if y=='rock':
-        print('computer win')
-    else:
+    if computer=='rock':
         print('user win')
+    else:
+        print('computer win') 
+
 elif x=='PAPER' or 'paper' or 'Paper':
-    if y=='scissors':
-        print('computer win')
+    if computer=='scissors':
+        print('user win')   
     else:
-        print('user win')
+        print('computer win')
+
 elif x=='Rock' or 'rock' or 'ROCK':
-    if y=='paper':
-        print('computer win')
+    if computer=='paper':
+        print('user win')      
     else:
-        print('user win')
-        
+        print('computer win')
 
-
-
-# or y[1]!=x[1] or y[2]!=x[2]:
