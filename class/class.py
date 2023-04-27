@@ -94,63 +94,63 @@
 # make a methode DisplayTime which should print the time..
 # make a methode DisplayMintue which should display the total minitues in the time.
 
-class Time:
+# class Time:
     
-    def __init__(self,hours,minutes):
+#     def __init__(self,hours,minutes):
 
-        self.hours = hours
-        self.minutes = minutes
+#         self.hours = hours
+#         self.minutes = minutes
 
-    def AddTime(self):
-        a = self.hours
-        b = self.minutes
-        c = (a*60) + b
-        return c
+#     def AddTime(self):
+#         a = self.hours
+#         b = self.minutes
+#         c = (a*60) + b
+#         return c
     
-    def DisplayTime(self):
+#     def DisplayTime(self):
 
-        print(self.hours,'hour',self.minutes,'minutes')
+#         print(self.hours,'hour',self.minutes,'minutes')
 
-    def DisplayMinutes(self):
+#     def DisplayMinutes(self):
 
-        a = self.hours
-        b = self.minutes
-        c = (a*60) + b
+#         a = self.hours
+#         b = self.minutes
+#         c = (a*60) + b
         
 
-    def __add__(self,other):
+#     def __add__(self,other):
 
-        a = (self.hours*60)+(other.hours*60)
-        b = self.minutes+other.minutes
+#         a = (self.hours*60)+(other.hours*60)
+#         b = self.minutes+other.minutes
 
-        c= (a+b)//60
-        d = (a+b)%60
-        e = Time(c,d)
-        return e
+#         c= (a+b)//60
+#         d = (a+b)%60
+#         e = Time(c,d)
+#         return e
 
-print()
-print('Enter the time for first object')
-print()
-x = int(input('Enter the hours:'))
-y = int(input('Enter the minutes:'))
-print()
-print('Enter the time for second object')
-print()
-p = int(input('Enter the hours:'))
-q = int(input('Enter the minutes:'))
-print()
+# print()
+# print('Enter the time for first object')
+# print()
+# x = int(input('Enter the hours:'))
+# y = int(input('Enter the minutes:'))
+# print()
+# print('Enter the time for second object')
+# print()
+# p = int(input('Enter the hours:'))
+# q = int(input('Enter the minutes:'))
+# print()
 
-timeobject1 = Time(x,y)
-timeobject2 = Time(p,q)
+# timeobject1 = Time(x,y)
+# timeobject2 = Time(p,q)
 
-timeobject1.DisplayTime()
-timeobject1.DisplayMinutes()
+# timeobject1.DisplayTime()
+# timeobject1.DisplayMinutes()
 
-timeobject2.DisplayTime()
-timeobject2.DisplayMinutes()
+# timeobject2.DisplayTime()
+# timeobject2.DisplayMinutes()
 
-timeobject3 = timeobject1+timeobject2
+# timeobject3 = timeobject1+timeobject2
 
-print(timeobject3.hours,'hour',timeobject3.minutes,'minutes')
+# print(timeobject3.hours,'hour',timeobject3.minutes,'minutes')
 #####################################################################
 
