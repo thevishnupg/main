@@ -32,28 +32,56 @@ import re
 
 # Question 3  Find 3 letter 4letter 5 letter words in a sentece
 
-# x = 'To find all three letter four letter and five letter words in a sentece'
+# x = 'To find all three letter four letter and five letter words in a sentence'
+# y = x[::-1]
 
-# txt = re.findall(r'\w{3,5}\s',x)
-# print(txt)
 
+# txt1 = re.findall(r'\w{3,5}',x)
+
+
+# txt2 = re.findall(r'\w{3,5}',y)
+# txt2_rev=(txt2[::-1])
+
+# k1=' '
+# k2=' '
+
+# for i in txt1:
+   
+#    k1 = k1+i
+# #    print(k1)
+
+
+# for i in txt2_rev:
+
+#     d=(i[::-1])
+    
+#     k2 = k2+d
+#     # print(k2)
+
+# print(k1)
+# print(k2)
+    
 ##################################################################################
 
 # Question 4  Password validation
 
-# x = input('Enter your password:')
-# txt = re.findall(r'[a-z A-Z 0-9]',x)
+x = input('Enter your password:')
+txt = re.findall(r'\d*[a-z A-Z 0-9]',x)
 
-# if len(txt)<8:
-#     if :
-#         print('Password: ',txt)
+
+if len(txt)<8:
+    print('Password: ',txt)
+else:
+    print('Password must lower than 8 character')
+
+####################################################################################
 
 
 # Question 5  Email validation
 
 # x = input('Enter the email:')
 
-# txt = re.match(r'[a-z 0-9]+\@[a-z 0-9]+\.[a-z]{2,3}',x)
+# txt = re.match(r'[a-z 0-9]+\@[a-z 0-9]+\.[a-z]{2,3}$',x)
 
 # if txt:
 #     print('Email obtain:',x)
