@@ -65,14 +65,30 @@ import re
 
 # Question 4  Password validation
 
-x = input('Enter your password:')
-txt = re.findall(r'\d*[a-z A-Z 0-9]',x)
+# x = input('Enter your password:')
+
+# txt1 = len(x)
+# txt2 = re.search(r'[a-z]',x)
+# txt3 = re.search(r'[A-Z]',x)
+# txt4 = re.search(r'[0-9]',x)
+# txt5 = re.search(r'\s',x)
+# txt6 = re.search(r'[@#$%&_*]',x)
 
 
-if len(txt)<8:
-    print('Password: ',txt)
-else:
-    print('Password must lower than 8 character')
+# if txt1>8:
+#     print('Not valid, Password should not grater than 8 letter')
+# if not txt2:
+#     print('Not valid , Password should contain one lower case letter')
+# if not txt3:
+#     print('Not valid, Password should contain one capital letter ')
+# if not txt4:
+#     print('Not valid, Password should contain one digit')
+# if txt5:
+#     print('Not valid, Password should not contain white space')
+# if not txt6:
+#     print('Not valid, Password should contain special charecter')
+# else:
+#     print('Password obtained.')
 
 ####################################################################################
 
@@ -88,6 +104,5 @@ else:
     
 # else:
 #     print('Wrong email')
-
 
 
