@@ -1,0 +1,7 @@
+btn1=Button(frame1,text='click',command=info).pack()
+btn1=Button(frame1,text='click',command=warning).pack()
+btn1=Button(frame1,text='click',command=error).pack()
+btn1=Button(frame1,text='click',command=question).pack()
+btn1=Button(frame1,text='click',command=ok_cancel).pack()
+btn1=Button(frame1,text='click',command=yes_no).pack()
+btn1=Button(frame1,text='click',command=retry_cancel).pack()
