@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p id="demo1">
+        Hello world
+    </p>
+    <button type="button" onclick="change()">Click</button>
+
+    <br>
+    <br>
+    <br>
+
+    <p>
+        <button type="button" onclick="bulb_on()">Click</button>
+        <img id="demo2" src="bulboff.jpg" width="60" alt="bulb image">
+        <i><button type="button" onclick="bulb_off()">Click</button></i>
+    </p>
+
+
+
+
+
+
+    <script>
+        document.getElementById('demo1').style='color:red';
+        //document.write('Hello, first run');
+        //window.alert('You have been warned');
+        console.log(1+2);
+        function change()
+        {
+            document.getElementById('demo1').style='color:green';
+            document.getElementById('demo1').innerHTML='color changed';
+            //document.write('Hello, second run');
+        }
+        // Function to turn on the bulb
+        function bulb_on()
+        {
+            document.getElementById('demo2').src='bulbon.jpg';
+            //document.write('Hello, second run');
+        }
+        // Function to turn off the bulb
+        function bulb_off()
+        {
+            document.getElementById('demo2').src='bulboff.jpg';
+            //document.write('Hello, second run');
+        }
+    </script>
+</body>
+</html>
