@@ -19,15 +19,12 @@
 
     <p>
         <button type="button" onclick="bulb_on()">Click</button>
-        <img id="demo2" src="bulboff.jpg" width="60" alt="bulb image">
+        <img id="demo2" src="../img/bulboff.jpg" width="60" alt="bulb image">
         <i><button type="button" onclick="bulb_off()">Click</button></i>
     </p>
 
 
-
-
-
-
+<!-- Internal execution -->
     <script>
         document.getElementById('demo1').style='color:red';
         //document.write('Hello, first run');
@@ -42,13 +39,13 @@
         // Function to turn on the bulb
         function bulb_on()
         {
-            document.getElementById('demo2').src='bulbon.jpg';
+            document.getElementById('demo2').src='../img/bulbon.jpg';
             //document.write('Hello, second run');
         }
         // Function to turn off the bulb
         function bulb_off()
         {
-            document.getElementById('demo2').src='bulboff.jpg';
+            document.getElementById('demo2').src='../img/bulboff.jpg';
             //document.write('Hello, second run');
         }
     </script>
