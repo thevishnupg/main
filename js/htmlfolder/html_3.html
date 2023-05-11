@@ -5,35 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area</title>
+    <!-- jquery link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <!-- Question: area -->
-    <h2><u>Area</u></h2>
-    <label for="">Width:-</label>
-    <input id="input1" type="text" placeholder="Enter the width"> 
-    <br>
-    <br>
-    <label for="">Height-:</label>
-    <input id="input2" type="text" placeholder="Enter the width">
-    <br>
-    <br>
-    <button type="button" value="submit" onclick="area()">Submit</button>
-    <i> <input id="result" type="text" placeholder="Result"></i>
+    <div>
+        <!-- Question1: area -->
+        <h2><u>Area</u></h2>
+        <label for="">Width:-</label>
+        <input id="input1" type="text" placeholder="Enter the width"> 
+        <br>
+        <br>
+        <label for="">Height-:</label>
+        <input id="input2" type="text" placeholder="Enter the width">
+        <br>
+        <br>
+        <button type="button" value="submit" onclick="area()">Submit</button>
+        <i> <input id="result1" type="text" placeholder="Result"></i>
+
+        <br>
+        <br>
+    </div>
+
+    <div>
+        <!-- Question2 : Factorial -->
+        <h2><u>Factorial</u></h2>
+        <label for="">Factorial:-</label>
+        <input id="input3" type="text" placeholder="Enter the number"> 
+        <br>
+        <br>
+        <button type="button" value="submit" onclick="fact()">Submit</button>
+        <i> <input id="result2" type="text" placeholder="Result"></i>
+
+        <br>
+        <br>
+    </div>
+
+    <div>
+        <!-- Question3 : Find the price of fruits -->
+        <h2><u>Find the price of fruits</u></h2>
+
+        <label for="fruit">Select the fruit:</label>
+        <select name="fruit" id="input4">
+            <option value=""></option>
+            <option value="Apple">Apple</option>
+            <option value="Mango">Mango</option>
+            <option value="Grapes">Grapes</option>
+            <option value="Banana">Banana</option>
+            <option value="Banana">Watermelon</option>
+        </select>
+        <br><br>
+        <button type="button" value="submit" onclick="price_fruit()">Submit</button>
+        <i> <input id="result3" type="text" placeholder="Price"></i>
+    </div>
 
     <br>
     <br>
 
-<!-- Question2 : Factorial -->
-    <h2><u>Factorial</u></h2>
-    <label for="">Factorial:-</label>
-    <input id="input" type="text" placeholder="Enter the number"> 
-    <br>
-    <br>
-    <button type="button" value="submit" onclick="fact()">Submit</button>
-    <i> <input id="result" type="text" placeholder="Result"></i>
+    <div>
+        <!-- Question4 : Password and Email validation -->
+        <h2><u>Password and Email validation</u></h2>
 
-    
+        <label for="">Username:-</label>
+        <input id="input5" type="text" placeholder="username"> <br>
+        <label for="">Password:-</label>
+        <input id="input6" type="text" placeholder="password"> <br>
+        <label for="">Password:-</label>
+        <input id="input7" type="text" placeholder="confirm password"> <br>
+        <label for="">Email:-</label>
+        <input id="input8" type="text" placeholder="email"> <br>
+        <label for="">Mobile:-</label>
+        <input id="input9" type="text" placeholder="phone number"> <br>
 
+        
+        <br>
+        <br>
+        <button type="button" value="submit" onclick="validation()">Submit</button>
+       
+    </div>
+
+<br>
+<br>
+<br>
+<!-- Question5 : Hide and Show content using jquery -->
+    <!-- <label for="">Hide your content:-</label>
+    <i><button id="hide">Hide</button></i>
+
+<br>
+<br>
+    <label for="">Show your content:-</label>
+    <i><button id="show">Show</button></i> -->
 
     <script src="../jsfolder/js_file3.js"></script>
 </body>
