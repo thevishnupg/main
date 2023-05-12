@@ -57,13 +57,47 @@ function price_fruit()
 function validation()
 {
 
-    var u,p1,p2,e,m;
-    u = document.getElementById('input5').value;
-    p1 = document.getElementById('input6').value;
-    p2 = document.getElementById('input7').value;
-    e = document.getElementById('input8').value;
-    m = document.getElementById('input9').value;
+    var user,pwrd1,pwrd2,emid,phone;
+    var matching = /[a-z0-9]+[-#$%^&*]?[a-z0-9]+[.][a-z]{2,3}/;
+    user = document.getElementById('input5').value;
+    pwrd1 = document.getElementById('input6').value;
+    pwrd2 = document.getElementById('input7').value;
+    emid = document.getElementById('input8').value;
+    phone = document.getElementById('input9').value;
 
+
+    if(user == ''){
+        document.getElementById('usererr').innerHTML="field required";
+    }
+
+    else if (pwrd1==''){
+        document.getElementById('pwerr').innerHTML="Password is required";
+    }
+
+     else if(pwrd1.length<=8){
+        document.getElementById('pwerr').innerHTML="Password must be at least 8 character ";
+
+    }
+    else if(pwrd1.length>=15){
+        document.getElementById('pwerr').innerHTML="Password must not exeed 15 character";
+    }
+
+    else if(pwrd1!=pwrd2){
+        document.getElementById('pw2err').innerHTML="Wrong Password";
+
+    }
+    else if (emid==''){
+        document.getElementById('mailerror').innerHTML="Email is required";
+    }
+    else if (emid != emid.value.match(matching)){
+        document.getElementById('mailerror').innerHTML="Wrong email";
+    }
+    else if (phone==''){
+        document.getElementById('phoneerror').innerHTML="Mobile number required";
+    }
+    else{
+        document.getElementById('work').innerHTML="Password obtained"
+    }
 
     // txt1 = len(x)
     // txt2 = re.search(r'[a-z]',x)
