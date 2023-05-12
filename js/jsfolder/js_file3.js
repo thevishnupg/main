@@ -58,16 +58,16 @@ function validation()
 {
 
     var user,pwrd1,pwrd2,emid,phone;
-    var matching = /[a-z0-9]+[-#$%^&*]?[a-z0-9]+[.][a-z]{2,3}/;
+    // let matching = /[a-z0-9]+[-#$%^&*]?[a-z0-9]+[.][a-z]{2,3}/;
     user = document.getElementById('input5').value;
     pwrd1 = document.getElementById('input6').value;
     pwrd2 = document.getElementById('input7').value;
-    emid = document.getElementById('input8').value;
-    phone = document.getElementById('input9').value;
+    emid = document.getElementById('input10').value;
+    phone = document.getElementById('input11').value;
 
 
     if(user == ''){
-        document.getElementById('usererr').innerHTML="field required";
+        document.getElementById('usererr').innerHTML="user name required";
     }
 
     else if (pwrd1==''){
@@ -83,20 +83,20 @@ function validation()
     }
 
     else if(pwrd1!=pwrd2){
-        document.getElementById('pw2err').innerHTML="Wrong Password";
+        document.getElementById('pw2err').innerHTML="Password not matching";
 
     }
     else if (emid==''){
-        document.getElementById('mailerror').innerHTML="Email is required";
+        document.getElementById('mail').innerHTML="Email is required";
     }
-    else if (emid != emid.value.match(matching)){
-        document.getElementById('mailerror').innerHTML="Wrong email";
-    }
+    // else if (emid != emid.value.match(matching)){
+    //     document.getElementById('mail').innerHTML="Wrong email";
+    // }
     else if (phone==''){
-        document.getElementById('phoneerror').innerHTML="Mobile number required";
+        document.getElementById('ph').innerHTML="Mobile number required";
     }
     else{
-        document.getElementById('work').innerHTML="Password obtained"
+        document.getElementById('work').innerHTML="All works well"
     }
 
     // txt1 = len(x)
